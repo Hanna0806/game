@@ -19,7 +19,7 @@ body {
     font-style: normal;
     font-size: 2rem;
     // height: 100vh;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .card {
@@ -29,8 +29,13 @@ body {
     justify-content: center;
     height: 100vh;
     background: linear-gradient(#29323c, #485563);
+    transition: margin 0.5s ease-in-out;
 }
 
+.card.up {
+    margin-top: -100vh;
+
+}
 
 .title {
     line-height: 1.4;
@@ -129,3 +134,4 @@ body {
     border: 1px solid red;
     cursor: pointer;
 }
+
